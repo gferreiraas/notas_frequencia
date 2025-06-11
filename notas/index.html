@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/style.css">
+	<title>Entrada de Vetor</title>
+</head>
+<body>
+	<h2>Cadastro dos alunos</h2>
+	<form id="cadastro_professor">
+		<label for="opcao">Selecione o Aluno:</label>
+	<select id="opcao" name="opcao">
+		<option value="opcao1">Opção 1</option>
+		<option value="opcao2">Opção 2</option>
+		<option value="opcao3">Opção 3</option>
+		<option value="opcao4">Opção 4</option>
+	</select>
+				
+		<button type="button" id="add-btn" onclick="cadastraraaluno()">Selecionar aluno</button>
+	
+		<h3>Cadastro dos alunos</h3>
+		<form id="cadastro_professor">
+			<label for="valor">Digite a nota:</label>
+			<input type="text" id="valor" name="valor" required>
+					
+			<button type="buttonn" id="add-btnn" onclick="adicionarnotas()">Adicionar nota</button>
+		
+	
+		<table id="tabelaValores">
+			<thead>
+				<tr>
+					<th>Valores</th>
+				</tr>
+			</thead>
+				<tbody>
+					<!-- Valores adicionados aparecerão aqui -->
+				</tbody>
+		</table>
+	<script src="js/script.js"></script>
+</body>
+</html>
